@@ -7,6 +7,7 @@
     <js-module src="www/app-version.js" name="RareloopAppVersion">
         <clobbers target="AppVersion" />
     </js-module>
+
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="RareloopAppVersion">
@@ -15,5 +16,14 @@
         </config-file>
         <header-file src="src/ios/RareloopAppVersion.h" />
         <source-file src="src/ios/RareloopAppVersion.m" />
+    </platform>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="RareloopAppVersion">
+                <param name="android-package" value="com.rareloop.cordova.appversion.RareloopAppVersion"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/RareloopAppVersion.java" target-dir="src/com/rareloop/cordova/appversion" />
     </platform>
 </plugin>
