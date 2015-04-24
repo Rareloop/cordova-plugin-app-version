@@ -2,9 +2,17 @@
 
 Cordova/PhoneGap plugin for accessing the native app's version and build number within JavaScript. The values are bootstrapped at app load and can be used synchronously.
 
-## Supported Platfors
+## Supported Platforms
 
 - iOS
+
+## Installation
+
+Using the Cordova CLI:
+
+```shell
+cordova plugin add https://github.com/Rareloop/cordova-plugin-app-version.git
+```
 
 ## Usage
 
