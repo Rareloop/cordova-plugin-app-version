@@ -24,8 +24,9 @@ var exec = require('cordova/exec');
 var channel = require('cordova/channel');
 var utils = require('cordova/utils');
 
-// Wait on the CordovaInfoReady event
-channel.waitForInitialization('onCordovaInfoReady');
+channel.createSticky('onCordovaAppVersionReady');
+// Wait on the onCordovaAppVersionReady event
+channel.waitForInitialization('onCordovaAppVersionReady');
 
 /**
  * Object representing the app's native version and build number
@@ -45,7 +46,7 @@ var RareloopAppVersion = function () {
             _this.version = info.version;
             _this.build = parseInt(info.build, 10);
 
-            channel.onCordovaInfoReady.fire();
+            channel.onCordovaAppVersionReady.fire();
         },function(e) {
             _this.available = false;
             utils.alert("[ERROR] Error initializing Version Plugin: " + e);
