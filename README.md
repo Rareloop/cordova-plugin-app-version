@@ -9,10 +9,16 @@ Cordova/PhoneGap plugin for accessing the native app's version and build number 
 
 ## Installation
 
-Using the Cordova CLI:
+The plugin can be installed with the Cordova CLI:
 
 ```shell
-cordova plugin add https://github.com/Rareloop/cordova-plugin-app-version.git
+cordova plugin add cordova-plugin-appversion
+```
+
+The plugin is hosted on NPM so requires Cordova CLI `5.0.0` as a minimum. If you have any issues installing, make sure you have the most upto date version of Cordova from NPM:
+
+```shell
+npm install -g cordova
 ```
 
 ## Usage
