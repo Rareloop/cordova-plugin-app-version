@@ -6,6 +6,7 @@ Cordova/PhoneGap plugin for accessing the native app's version and build number 
 
 - iOS
 - Android
+- Windows
 
 ## Installation
 
