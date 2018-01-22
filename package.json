@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/tominou/cordova-plugin-app-version/issues"
   },
-  "homepage": "https://github.com/tominou/cordova-plugin-app-version"
+  "homepage": "https://github.com/tominou/cordova-plugin-app-version",
+  "devDependencies": {
+    "cordova": "^6.3.1"
+  }
 }
