@@ -5,6 +5,9 @@
     <name>App Version</name>
     <description>Expose the native app version to JavaScript</description>
     <license>MIT</license>
+    <repo>https://github.com/tominou/cordova-plugin-app-version.git</repo>
+    <issue>https://github.com/tominou/cordova-plugin-app-version/issues</issue>
+        
     <js-module src="www/app-version.js" name="RareloopAppVersion">
         <clobbers target="AppVersion" />
     </js-module>
