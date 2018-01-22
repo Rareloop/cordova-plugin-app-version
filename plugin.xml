@@ -7,7 +7,12 @@
     <js-module src="www/app-version.js" name="RareloopAppVersion">
         <clobbers target="AppVersion" />
     </js-module>
-
+    
+    <engines>
+        <engine name="cordova-android" platform="android" version=">=3.0.0" />
+        <engine name="cordova-ios" platform="ios" version=">=3.0.0" />
+    </engines>
+    
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="RareloopAppVersion">
