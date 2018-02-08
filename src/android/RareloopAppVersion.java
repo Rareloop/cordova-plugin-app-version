@@ -66,6 +66,7 @@ public class RareloopAppVersion extends CordovaPlugin {
                 JSONObject r = new JSONObject();
                 r.put("version", packageManager.getPackageInfo(this.cordova.getActivity().getPackageName(), 0).versionName);
                 r.put("build", packageManager.getPackageInfo(this.cordova.getActivity().getPackageName(), 0).versionCode);
+                r.put("packageName", this.cordova.getActivity().getPackageName());
 
                 callbackContext.success(r);
             } catch (NameNotFoundException e) {

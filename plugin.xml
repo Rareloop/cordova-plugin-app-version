@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-appversion" version="1.0.0">
     <name>App Version</name>
     <description>Expose the native app version to JavaScript</description>
     <license>MIT</license>
+    <repo>https://github.com/tominou/cordova-plugin-app-version.git</repo>
+    <issue>https://github.com/tominou/cordova-plugin-app-version/issues</issue>
+        
     <js-module src="www/app-version.js" name="RareloopAppVersion">
         <clobbers target="AppVersion" />
     </js-module>
-
+    
+    <engines>
+        <engine name="cordova-android" platform="android" version=">=3.0.0" />
+        <engine name="cordova-ios" platform="ios" version=">=3.0.0" />
+    </engines>
+    
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="RareloopAppVersion">
@@ -19,7 +28,7 @@
     </platform>
 
     <platform name="android">
-        <config-file target="config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="RareloopAppVersion">
                 <param name="android-package" value="com.rareloop.cordova.appversion.RareloopAppVersion"/>
             </feature>
