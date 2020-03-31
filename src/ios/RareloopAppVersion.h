@@ -22,7 +22,7 @@
 
 #import <Cordova/CDV.h>
 
-@interface RareloopAppVersion : CDVPlugin <UIWebViewDelegate>
+@interface RareloopAppVersion : CDVPlugin 
 {
 }
 
