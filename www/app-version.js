@@ -45,6 +45,7 @@ var RareloopAppVersion = function () {
 
             _this.version = info.version;
             _this.build = parseInt(info.build, 10);
+            _this.buildString = info.build;
 
             channel.onCordovaAppVersionReady.fire();
         },function(e) {

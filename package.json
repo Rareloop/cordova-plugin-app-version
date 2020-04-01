@@ -1,12 +1,13 @@
 {
   "name": "cordova-plugin-appversion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Access the native app version & build number in JavaScript",
   "cordova": {
     "id": "cordova-plugin-appversion",
     "platforms": [
       "android",
-      "ios"
+      "ios",
+      "windows"
     ]
   },
   "repository": {

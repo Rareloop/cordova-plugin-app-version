@@ -6,6 +6,7 @@ Cordova/PhoneGap plugin for accessing the native app's version and build number 
 
 - iOS
 - Android
+- Windows
 
 ## Installation
 
@@ -23,9 +24,14 @@ npm install -g cordova
 
 ## Usage
 
-After `deviceReady` has fired you'll be able to access a new object in the global scope that contains both the app version and build number.
+After `deviceReady` has fired you'll be able to access a new object in the global scope that contains three version-related properties:
+
+- *version*: string value of the released version number
+- *build*: number value of the build (more useful for Android)
+- *buildString*: string value of the build (more useful for iOS, although also passes the Android build back as a string)
 
 ```javascript
 console.log(AppVersion.version); // e.g. "1.2.3"
 console.log(AppVersion.build); // e.g. 1234
+console.log(AppVersion.buildString); // e.g. "1.2.3b4"
 ```
